@@ -1,3 +1,6 @@
+#include <stdlib.h>; // for size_t
+#include <stdio.h>; // for printf
+
 struct dynArray {
   size_t size;
   size_t capacity;
@@ -45,5 +48,5 @@ int main(void){
   set(dA, 3, 2); // Changes 0 to 3
   push(&dA, 5); // Adds 5 to the end of the array.
   for(int i=0; i < dA.size; i++) // should print 1 2 3 4 5
-    printf("%d", get(dA, i));
+    printf("%d ", get(dA, i));
 };
