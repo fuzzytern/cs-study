@@ -35,7 +35,7 @@ void extend(dynArray *dArr){
     for(int i=0; i < dArr->size; i++)
       arr[i] = dArr->data[i];
     dArr->data = arr;
-  };
+  }
 }
 int main(void){
   int[] items = { 1,2,0,4 };
