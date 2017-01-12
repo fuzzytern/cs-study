@@ -30,7 +30,7 @@ void prepend(node** list, int elem){
   node* n = link(elem,NULL);
   n->next = *list;
   *list = n;
-};
+}
 // Adds elem as the last node of the list
 void append(node* list, int elem){
   if(list == NULL) return;
