@@ -21,11 +21,8 @@ const filesFromDir = (dir) => {
 }
 
 filesFromDir('.')
-.then(resolvers => {
-  Promise.all(resolvers)
-  .then(data => console.log(data))
-  .catch(err => console.log(err))
-})
+.then(resolvers => Promise.all(resolvers))
+.then(data => console.log(data))
 .catch(err => console.log(err));
 
 // TODO Write again using generators: https://github.com/tj/co
